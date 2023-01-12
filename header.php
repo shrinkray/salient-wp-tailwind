@@ -40,7 +40,7 @@ get_template_part( 'includes/partials/header/header-space' );
 
 ?>
 
-<div id="header-outer" <?php nectar_header_nav_attributes(); ?>>
+<header id="header-outer" <?php nectar_header_nav_attributes(); ?>>
     <?php
 
     get_template_part( 'includes/partials/header/secondary-navigation' );
@@ -55,7 +55,7 @@ get_template_part( 'includes/partials/header/header-space' );
 
     ?>
 
-</div>
+</header>
 <?php
 
 if ( ! empty( $nectar_options['enable-cart'] ) && '1' === $nectar_options['enable-cart'] ) {
@@ -77,16 +77,16 @@ get_template_part( 'includes/partials/footer/body-border' );
 		nectar_hook_after_outer_wrap_open();
 ?>
 
-    <header class="flex-0 bg-slate-100 px-4 border shadow-md">
-        <div class="max-w-screen-lg mx-auto flex justify-between items-center min-h-[40px]">
-            <div class="">
-                <a href="<?php echo home_url() ?>">Logo</a>
-            </div>
-            <div>
-                <?php echo wp_nav_menu() ?>
-            </div>
-        </div>
-    </header>
+<!--    <header class="flex-0 bg-slate-100 px-4 border shadow-md">-->
+<!--        <div class="max-w-screen-lg mx-auto flex justify-between items-center min-h-[40px]">-->
+<!--            <div class="">-->
+<!--                <a href="--><?php //echo home_url() ?><!--">Logo</a>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                --><?php //echo wp_nav_menu() ?>
+<!--            </div>-->
+<!--        </div>-->
+<!--    </header>-->
 
     <main class="flex-grow px-4 py-4">
 
