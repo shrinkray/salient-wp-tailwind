@@ -1,3 +1,23 @@
-/node_modules
+
 /localhost.pem
 /localhost-key.pem
+**/vendor
+# /dist/
+/node_modules/
+# **/__*.php
+# Computed file
+/dist/*
+# IDE
+.idea
+.history
+.DS_Store
+*~
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+
+# host specific (irrelevant for this repo)
+.gitattributes
+_wpeprivate*
